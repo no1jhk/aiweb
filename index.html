@@ -5,14 +5,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
-  <link rel="preload" href="/styles.css" as="style">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
 </head>
 <body>
   <header class="site-header" aria-label="Main">
-    <a href="/index.html" class="logo" aria-label="Home">
+    <a href="index.html" class="logo" aria-label="Home">
       <span class="logo-text">
         <strong class="brand">AI Web Service</strong>
         <span class="sub">MADE BY AI</span>
@@ -40,38 +40,37 @@
         </article>
       </div>
 
-      <!-- Bottom center control: bars indicator + diamond buttons -->
-      <div class="slider-nav centerbar" aria-label="Carousel controls">
+      <!-- Center bars indicator -->
+      <div class="bars center" role="tablist" aria-label="slides">
+        <span class="bar active" aria-label="첫번째"></span>
+        <span class="bar" aria-label="두번째"></span>
+        <span class="bar" aria-label="세번째"></span>
+      </div>
+
+      <!-- Right-side controls: prev + next (attached) -->
+      <div class="right-controls">
         <button id="prev" class="nav-btn diamond" aria-label="이전">
-          <svg viewBox="0 0 24 24" width="18" height="18" class="angle"><polyline points="14,6 8,12 14,18" fill="none" stroke="white" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"/></svg>
+          <svg viewBox="0 0 36 36" width="32" height="32" class="angle"><polyline points="22,8 12,18 22,28" fill="none" stroke="white" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/></svg>
         </button>
-
-        <div class="bars" role="tablist" aria-label="slides">
-          <span class="bar active" aria-label="첫번째"></span>
-          <span class="bar" aria-label="두번째"></span>
-          <span class="bar" aria-label="세번째"></span>
-        </div>
-
         <button id="next" class="nav-btn diamond" aria-label="다음">
-          <svg viewBox="0 0 24 24" width="18" height="18" class="angle"><polyline points="10,6 16,12 10,18" fill="none" stroke="white" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter"/></svg>
+          <svg viewBox="0 0 36 36" width="32" height="32" class="angle"><polyline points="14,8 24,18 14,28" fill="none" stroke="white" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter"/></svg>
         </button>
       </div>
 
-      <!-- Progress under caption (center) -->
       <div class="progress progress-under" aria-hidden="true"><span id="progressBar"></span></div>
     </section>
   </main>
   <div id="menu-overlay" class="overlay" hidden>
     <nav class="overlay-nav" aria-label="Primary">
       <ul role="menu">
-        <li role="none"><a role="menuitem" href="/work.html">Work</a></li>
-        <li role="none"><a role="menuitem" href="/about.html">About</a></li>
-        <li role="none"><a role="menuitem" href="/news.html">News</a></li>
-        <li role="none"><a role="menuitem" href="/contact.html">Contact</a></li>
+        <li role="none"><a role="menuitem" href="work.html">Work</a></li>
+        <li role="none"><a role="menuitem" href="about.html">About</a></li>
+        <li role="none"><a role="menuitem" href="news.html">News</a></li>
+        <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
-  <script src="/script.js" defer></script>
+  <script src="script.js" defer></script>
 
 </body>
 </html>

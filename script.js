@@ -1,5 +1,5 @@
 (() => {
-  // Main slider
+  // Main slider logic
   const slider = document.querySelector('.slider');
   if(slider){
     const slides = [...slider.querySelectorAll('.slide')];
@@ -9,9 +9,7 @@
     const bars = slider.querySelectorAll('.bars .bar');
     const AUTO = 6000;
     let i = 0, timer;
-    function setBars(idx){
-      bars.forEach((b,k)=> b.classList.toggle('active', k===idx));
-    }
+    function setBars(idx){ bars.forEach((b,k)=> b.classList.toggle('active', k===idx)); }
     function show(n){
       slides[i].classList.remove('is-active');
       i = (n + slides.length) % slides.length;
@@ -34,7 +32,6 @@
     }
     prev?.addEventListener('click', ()=>{clearInterval(timer); left();});
     next?.addEventListener('click', ()=>{clearInterval(timer); right();});
-    // Optional: clicking bars to jump
     bars.forEach((b,k)=> b.addEventListener('click', ()=>{clearInterval(timer); show(k);}));
     let sx=0,dx=0;
     slider.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;},{passive:true});
@@ -43,13 +40,13 @@
     if(slides.length){ setBars(0); restart(); }
   }
 
-  // Overlay menu always on top
+  // Overlay menu
   const burger=document.querySelector('.burger');
   const overlay=document.getElementById('menu-overlay');
   if(burger&&overlay){
-    const navBox = overlay.querySelector('.overlay-nav');
-    const first = overlay.querySelector('a');
-    function open(){ document.body.classList.add('menu-open'); burger.setAttribute('aria-expanded','true'); overlay.hidden=false; first?.focus({preventScroll:true}); document.addEventListener('keydown',onEsc); document.documentElement.style.overflow='hidden'; }
+    const navBox=overlay.querySelector('.overlay-nav');
+    const first=overlay.querySelector('a');
+    function open(){ document.body.classList.add('menu-open'); burger.setAttribute('aria-expanded','true'); overlay.hidden=false; first?.focus({preventScroll:true}); document.addEventListener('keydown',onEsc); document.documentElement.style.overflow='hidden';}
     function close(){ document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded','false'); overlay.hidden=true; document.removeEventListener('keydown',onEsc); document.documentElement.style.overflow=''; burger.focus({preventScroll:true}); }
     function onEsc(e){ if(e.key==='Escape') close(); }
     burger.addEventListener('click', ()=> burger.getAttribute('aria-expanded')==='true' ? close() : open());
