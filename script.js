@@ -1,5 +1,5 @@
 (() => {
-  // Main slider logic
+  // Slider
   const slider = document.querySelector('.slider');
   if(slider){
     const slides = [...slider.querySelectorAll('.slide')];
@@ -40,7 +40,7 @@
     if(slides.length){ setBars(0); restart(); }
   }
 
-  // Overlay menu
+  // Menu overlay
   const burger=document.querySelector('.burger');
   const overlay=document.getElementById('menu-overlay');
   if(burger&&overlay){
