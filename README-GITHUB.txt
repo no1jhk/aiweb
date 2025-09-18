@@ -1,0 +1,1 @@
+See repo Settings → Pages. Use root or /docs. Keep .nojekyll.
