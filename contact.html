@@ -1,1 +1,72 @@
-<!doctype html><html lang="ko"><head><title>Contact — Studio</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet"><link rel="stylesheet" href="styles.css"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/></head><body class="subpage contact"><header class="site-header"><a href="index.html" class="logo"><span class="logo-text"><strong class="brand">AI Web Service</strong><span class="sub">MADE BY AI</span></span></a><button class="burger" aria-expanded="false" aria-controls="menu-overlay"><span class="line"></span><span class="line"></span><span class="line"></span></button></header><main class="page no-gaps"><section class="video-hero"><video class="bg" src="https://vod.plaync.com/BnS2/home/Guide/guide_04.mp4" autoplay muted loop playsinline></video><div class="veil"></div><div class="copy"><span class="eyebrow">CONTACT</span><h1>Want To Work With Us?</h1><p>문의사항이나 협업 제안이 있다면 언제든지 연락주세요. 빠른 시일 내 답변드리겠습니다.</p></div></section><section class="contact-map"><div id="map" class="map"></div></section></main><footer class="site-footer"><div class="f-inner"><div class="f-col"><address>서울 영등포구 선유서로26길21 엠제이파크 704호</address><div class="icons"><a href="#" class="icon yt" aria-label="YouTube"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.9 3 12 3 12 3s-6.9 0-8.7.4A4 4 0 0 0 .5 6.2 41.6 41.6 0 0 0 .1 12c0 1.9.1 3.8.4 5.8a4 4 0 0 0 2.8 2.8C4.9 21 12 21 12 21s6.9 0 8.7-.4a4 4 0 0 0 2.8-2.8c.3-2 .4-3.9.4-5.8 0-1.9-.1-3.8-.4-5.8zM9.8 15.5V8.5l6 3.5-6 3.5z"/></svg></a><a href="#" class="icon blog" aria-label="Blog"><svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M4 4h16v12H7l-3 3V4zm4 3h8v2H8V7zm0 4h8v2H8v-2z"/></svg></a></div><small>Copyright no1jhk 2025 All right reserved.</small></div></div></footer><div id="menu-overlay" class="overlay" hidden><nav class="overlay-nav"><ul><li><a href="work.html">Work</a></li><li><a href="about.html">About</a></li><li><a href="news.html">News</a></li><li><a href="contact.html">Contact</a></li></ul></nav></div><script src="script.js" defer></script><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script><script>const map=L.map('map',{scrollWheelZoom:false}).setView([37.5326,126.896],16);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19}).addTo(map);L.marker([37.5326,126.896]).addTo(map).bindPopup('서울 영등포구 선유서로26길21 엠제이파크 704호').openPopup();</script></body></html>
+<!doctype html>
+<html lang="ko">
+<head><title>Contact — Studio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+</head>
+<body class="subpage contact">
+  <header class="site-header" aria-label="Main">
+    <a href="index.html" class="logo" aria-label="Home">
+      <span class="logo-text">
+        <strong class="brand">AI Web Service</strong>
+        <span class="sub">MADE BY AI</span>
+      </span>
+    </a>
+    <button class="burger" aria-expanded="false" aria-controls="menu-overlay" aria-label="메뉴 열기">
+      <span class="line"></span><span class="line"></span><span class="line"></span>
+    </button>
+  </header>
+
+  <main class="page no-gaps">
+    <section class="video-hero">
+      <video class="bg" src="https://vod.plaync.com/BnS2/home/Guide/guide_04.mp4" autoplay muted loop playsinline></video>
+      <div class="veil"></div>
+      <div class="copy">
+        <span class="eyebrow">CONTACT</span>
+        <h1>Connecting Ideas, Creating Opportunities</h1>
+        <p>문의사항이나 협업 제안이 있다면 언제든지 연락주세요. 빠른 시일 내 답변드리겠습니다.</p>
+      </div>
+    </section>
+    <section class="contact-map"><div id="map" class="map"></div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="f-inner">
+      <div class="f-col">
+        <address>서울 영등포구 선유서로26길21 엠제이파크 704호</address>
+        <div class="icons">
+          <a href="#" class="icon yt" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.9 3 12 3 12 3s-6.9 0-8.7.4A4 4 0 0 0 .5 6.2 41.6 41.6 0 0 0 .1 12c0 1.9.1 3.8.4 5.8a4 4 0 0 0 2.8 2.8C4.9 21 12 21 12 21s6.9 0 8.7-.4a4 4 0 0 0 2.8-2.8c.3-2 .4-3.9.4-5.8 0-1.9-.1-3.8-.4-5.8zM9.8 15.5V8.5l6 3.5-6 3.5z"/></svg>
+          </a>
+          <a href="#" class="icon blog" aria-label="Blog">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M4 4h16v12H7l-3 3V4zm4 3h8v2H8V7zm0 4h8v2H8v-2z"/></svg>
+          </a>
+        </div>
+        <small>Copyright no1jhk 2025 All right reserved.</small>
+      </div>
+    </div>
+  </footer>
+  <div id="menu-overlay" class="overlay" hidden>
+    <nav class="overlay-nav" aria-label="Primary">
+      <ul role="menu">
+        <li role="none"><a role="menuitem" href="work.html">Work</a></li>
+        <li role="none"><a role="menuitem" href="about.html">About</a></li>
+        <li role="none"><a role="menuitem" href="news.html">News</a></li>
+        <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <script src="script.js" defer></script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+  const map = L.map('map', {scrollWheelZoom:false}).setView([37.5326,126.896], 16);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:19}).addTo(map);
+  L.marker([37.5326,126.896]).addTo(map).bindPopup('서울 영등포구 선유서로26길21 엠제이파크 704호').openPopup();
+</script>
+</body></html>
